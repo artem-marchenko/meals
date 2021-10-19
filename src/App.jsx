@@ -18,7 +18,7 @@ function App() {
         <main className='container content'>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/meals' component={Meals} />
+            <Route path='/products' component={Meals} />
             <Route component={NotFound} />
           </Switch>
         </main>

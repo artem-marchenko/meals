@@ -7,12 +7,13 @@ function Meals() {
 
   useEffect(() => {
     getMeals().then((data) => {
-      setMeals(data.meals);
+      setMeals(data.meals.filter((meal) => meal.strMeal.length < 25));
     });
   }, []);
 
   return (
     <>
+      <h2 className='list_title'>Products Page</h2>
       <MealsList meals={meals} />
     </>
   );
