@@ -1,7 +1,9 @@
 function Footer() {
   return (
     <footer className='page-footer'>
-      <div className='container'></div>
+      <div className='copyright'>
+        <span>© {new Date().getFullYear()} Copyright Text</span>
+      </div>
     </footer>
   );
 }

@@ -16,8 +16,10 @@ function Home() {
   }, []);
   return (
     <>
-      <h2 className='list_title'>Home Page</h2>
-      <MealsHomeList meals={meals} />
+      <div className='home__content'>
+        <h2 className='list_title'>Home Page</h2>
+        <MealsHomeList meals={meals} />
+      </div>
     </>
   );
 }

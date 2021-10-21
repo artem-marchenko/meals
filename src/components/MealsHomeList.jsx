@@ -11,16 +11,13 @@ function MealsHomeList({ meals = [] }) {
       spaceBetween={50}
       slidesPerView={1}
       navigation
-      pagination
-      onInit
-      onSlideChange
       breakpoints={{
         300: { slidesPerView: 1 },
         550: { slidesPerView: 2 },
         1000: { slidesPerView: 3 },
       }}
     >
-      <div className='list'>
+      <div className='list home__list'>
         {meals.map((el) => (
           <SwiperSlide>
             <MealsItem key={el.idMeal} {...el} />
